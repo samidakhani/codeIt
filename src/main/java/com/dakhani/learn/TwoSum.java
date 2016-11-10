@@ -11,6 +11,14 @@ import java.util.Arrays;
  */
 public class TwoSum {
 
+	/**
+	 * Finds the index of element in a sorted array
+	 * 
+	 * @param nums
+	 * @param key
+	 * @param second
+	 * @return
+	 */
 	private static int findIndexOf(final int[] nums, final int key,
 			boolean second) {
 
@@ -28,6 +36,11 @@ public class TwoSum {
 		return index;
 	}
 
+	/**
+	 * Program entry
+	 * 
+	 * @param args
+	 */
 	public static void main(final String[] args) {
 
 		int[] nums = { 3, 2, 4 };
@@ -40,6 +53,13 @@ public class TwoSum {
 		}
 	}
 
+	/**
+	 * Returns the index of elements in array nums that sum to the target
+	 * 
+	 * @param nums
+	 * @param target
+	 * @return
+	 */
 	public static int[] twoSum(final int[] nums, final int target) {
 
 		int[] result = new int[2];
@@ -57,6 +77,14 @@ public class TwoSum {
 		return result;
 	}
 
+	/**
+	 * Returns the index of elements in array nums that sum to the target. An
+	 * optimized approach
+	 * 
+	 * @param nums
+	 * @param target
+	 * @return
+	 */
 	public static int[] twoSumOptimised(final int[] nums, final int target) {
 
 		int[] result = new int[2];
